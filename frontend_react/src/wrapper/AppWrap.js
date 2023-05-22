@@ -10,13 +10,13 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
         <div id={idName} className={`app__container ${classNames}`}>
             {/* Render Social Media */}
             <SocialMedia />
-            
+
             <div className="app__wrapper app__flex">
                 {/* Render Components */}
                 <Component />
 
                 <div className="copyright">
-                    <p className="p-text">&copy; {/*2022-*/}{new Date().getFullYear()} Chrisitan</p>
+                    <p className="p-text">&copy; 2022-{new Date().getFullYear()} Chrisitan</p>
                     <p className="p-text">All rights reserved</p>
                     {/* <a className="p-text credit" href="https://www.freepik.com/photos/internet-marketing">Internet marketing photo created by creativeart - www.freepik.com</a>
                     <a className="p-text credit" href="https://www.freepik.com/vectors/web-services">Web services vector created by pikisuperstar - www.freepik.com</a> */}
